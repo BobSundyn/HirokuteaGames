@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Contato</title>
+
+    <meta http-equiv="content-type" content="text/html" charset="utf-8">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta name="author" content="Robert, Sara e Sophia">
+    <meta name="reply-to" content="sophiasilveira2003@gmail.com,robertsundyn@gmail.com,sarabittencourt06@gmail.com">
+    <meta name="description" content="Site de uma empresa fict&iacute;cia que est&aacute;; fazendo um jogo de super trunfo online.">
+    <meta name="keywords" content="jogo, cartas, super, trunfo, game, ataque, defesa, magia">
+    <meta name="robots" content="index, follow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <link rel="icon" href="img/logomobile.png">
+
+</head>
+
+<body>
+    <header id="topo">
+        <figure id="logo"></figure>
+
+        <button id="btn_menu"><a href="#menu"><i class="fa fa-bars fa-lg" aria-hidden="true"></i></a></button>
+
+        <nav id="menu">
+            <a id="btn_fechar" href="#">X</a>
+            <ul>
+                <a href="index.html">
+                    <li>Home</li>
+                </a>
+               
+                <a href="cartas.html">
+                    <li>Personagens</li>
+                </a>
+                
+                
+                <a href="contato.html">
+                    <li>Contato</li>
+                </a>
+                 <a class="jogar" href="supertrunfo.html">
+                    <li> Jogar Demo</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+     <a href="#" onclick="abrirModal()" id="abrir">Entrar em contato</a> 
+    <div id="cortina">
+        <div id="modal">
+            <!--  <a id="teste" href=""><p>ajsiodjioasjdoiasjdioj</p></a> -->
+            <a href="#" onclick="fecharModal()" id="fechar">X</a>
+            <form action="." method="GET">
+                <h2>Contato</h2>
+                <p>
+                    <label>Nome:
+                        <input onfocus="desfazerNome()" type="text" id="nome">
+                    </label>
+                </p>
+                
+                <p>
+                    <label>E-mail:
+                        <input onfocus="desfazerEmail()" type="email" id="email">
+                    </label>
+                </p>
+                <input id="btn" type="button" value="Enviar" onclick="validar()">
+                <input id="btn" type="reset" value="Limpar">
+                <p id="resultado"></p>
+
+            </form>
+        </div>
+    </div>
+
+    <footer id="rodapeContato">
+        <div id="redesSociais">
+            <P>Fique conectado</P>
+            <a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook-square fa-lg"
+                    aria-hidden="true"></i></a>
+
+            <a href="https://twitter.com/login?lang=pt" target="_blank"><i class="fa fa-twitter-square fa-lg"
+                    aria-hidden="true"></i></a>
+
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram fa-lg"
+                    aria-hidden="true"></i></a>
+
+            <a href="https://www.google.com/intl/pt-BR/gmail/about/" target="_blank"><i class="fa fa-envelope fa-lg"
+                    aria-hidden="true"></i></a>
+
+        </div>
+
+        <p>
+            Copyrigt &copy; Todos os direitos reservados. Robert Junior Sundyn da Silva, Sophia Mendes da Silveira e
+            Sara Rebeca Bittencourt da Silva.
+        </p>
+    </footer>
+    <script type="text/javascript" src="js/scripts.js"> </script>
+</body>
+
+</html>

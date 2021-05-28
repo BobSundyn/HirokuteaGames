@@ -1,0 +1,1332 @@
+
+/* inicio do css geral*/
+@charset 'utf-8';
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    color: white;
+}
+@font-face{
+    font-family: pixellari;
+    src: url("../font/Pixellari.ttf");
+}
+
+/* fim do css geral*/
+
+
+/* inicio do html principal*/
+
+#topo, #corpo, #rodape{
+    float: left;
+    width: 100%;
+}
+/* Inicio menu */
+#topo{
+    background-color: black; 
+}
+
+
+#btn_menu{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:black;
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+body{
+    background-image: url(../img/super-trunfo-bg.png);
+    background-color: #000000;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    font-family: pixellari;
+}
+#menu{
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    position: fixed;
+    background-color:rgba(0, 0, 0,0.9);
+    text-align: center;
+    z-index: 96;
+    font-family: pixellari;
+    font-size: 1.1em;
+}
+#menu ul{
+    float: left;
+    width: 100%; /* trabalhamos a largura da ul, par aque o sitens fiquem abaixo do X */
+    height: 100%;
+    text-align: center;
+}
+#menu ul li{
+    padding: 3%;/* esse primeiro valor representa em cima e embaixo */
+    font-size: 1.3em;
+}
+#menu ul li:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+#menu:target{
+    height: 100%;
+}
+#btn_fechar{
+    float: right;
+    margin-top: -3px;
+    margin-right: 10px;
+    padding: 20px;
+}
+#btn_fechar{
+    font-size: 1em !important;
+    font-weight: bold;
+}
+ul{
+    list-style: none;
+}
+
+#topo a{
+    color: white;
+}
+#logo{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/logomobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+/* Fim do menu */
+
+/* Inicio conteudo */
+.conteudo{  /* usando class para que todos tenham a mesma configuração */
+    width: 100%;
+    text-align: left;
+    font-size: 0.9em;
+    margin-bottom: 3%;
+    border-radius: 7px;
+    text-indent: 30px;
+    font-family: Pixellari;
+}
+.conteudo h1{
+    margin-top: 5px;
+    text-align: center;
+    font-size: 2.2em;
+}
+.conteudo  p{
+    padding: 5%;
+    text-align: justify;
+    text-indent: 30px;/* recuo de primeira linha */
+    font-size: 1.2em;
+}
+.conteudo figure img{
+    width: 50%;
+    height: 50%;
+    margin-left: 50px;
+}
+#quemSomos h3{
+    font-size: 2.2em;
+}
+#quemSomos p{
+    font-size: 1.2em;
+}
+/* Fim conteudo */
+
+/*iicio galerias*/
+
+#galerias_titulo h3{
+    font-size: 2em;
+    color: white;;
+    margin-top: 10%;
+    margin-bottom: 4%;
+}
+
+#carosel{
+    width: 100%;
+    height: auto;
+}
+
+#galeria2{
+        display: none;
+    }
+/*final galerias*/
+
+/* Roda pé - Footer*/
+#rodape{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 0.5px 0px 1px white;
+    background-color: rgba(0, 0, 0,0.02);
+    padding: 3% 4%;
+    font-size: 0.9em;
+    margin-top: 100px;
+}
+
+#redes_sociais a{
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: none;
+    font-size: 1.5em;
+    margin-right: 3%;
+    
+    transition: 0.2s;
+}
+#redes_sociais a:hover{
+    color: rgb(52, 122, 187);
+}
+#redes_sociais i{
+    transition: 0.2s;/* tem que colocar o transition aqui, pq só bomba aqui sem o hover */  
+  
+}
+#redes_sociais i:hover{
+    transform: translateY(-10px);
+}
+#rodape p{
+    margin-top: 10px;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+/* Roda pé do  Contato*/
+#rodapeContato{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 0.5px 0px 1px white;
+    background-color: black;
+    padding: 3% 4%;
+    font-size: 0.9em;
+    margin-top: 410px;
+}
+
+#redesSociais a{
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: none;
+    font-size: 1.5em;
+    margin-right: 3%;
+    
+    transition: 0.2s;
+}
+#redesSociais a:hover{
+    color: rgb(52, 122, 187);
+}
+#redesSociais i{
+    transition: 0.2s;/* tem que colocar o transition aqui, pq só bomba aqui sem o hover */  
+  
+}
+#redesSociais i:hover{
+    transform: translateY(-10px);
+}
+#rodapeContato p{
+    margin-top: 10px;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+
+/* fim do html principal*/
+
+/* Inicio modal contato */
+
+a{
+    color: white;
+    font-weight: bold;
+}
+#abrir{
+    z-index: 97;/* só vai funcionar se tiver position */
+    position: relative;
+}
+
+#cortina{
+    width: 70%;
+    height: 62%;
+    margin-top: 25%;
+    background-color: rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0px; /* só pode ser usado, quando estiver usando position */
+    z-index: 95;
+    transition: 1s;
+}
+
+#modal{
+    width: 60%;
+    height: 55%;
+    background-color: rgba(255,255,255,0.1);
+    margin: auto;
+    margin-right: 10px;
+    margin-top: -600px;
+    border-radius: 5px;
+    border: solid 2px rgb(24, 94, 175);
+    transition: 1.2s;
+    color: white;
+}
+
+#modal:hover{
+    transform: scale(1.3, 1.2);
+}
+#abrir{
+    margin: 30px;
+}
+#fechar{
+    float: right;
+    margin: 5px;
+}
+
+#modal h2{
+    font-size: 1.2em;
+}
+#modal label{
+    margin-left: 5px;
+}
+
+#modal form{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#modal form input{
+    border: solid 2px rgb(24, 94, 175);;
+    width: 85%;
+    height: 50%;
+    margin-left: 5px;
+    border-radius: 7px;
+    background: none;
+    color: white;
+}
+#modal form input#btn{
+    width: 30%;
+    height: 10%;
+    color: white;
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+/* Fim modal e Contato */
+
+/* incio cartas */
+
+#corpo_cartas{
+    width: 100%;
+    background-color:#000;
+}
+
+h1{
+     text-align: center;
+     font-size: 4em;
+	 color: white;
+}
+
+.cartas{
+    width: 90%;
+    background-color: #000;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px #255;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+	box-shadow: 0px 0px 20px #2d6562;
+}
+
+.cartas figure{
+    width: 100%;
+    height: 350px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cartas figcaption{
+    font-size: 2.5em;
+	color: white;
+}
+
+h2, h3{
+    margin-top: 4%;
+    font-size: 1.6em;
+	color: white;
+}
+
+.cartas p{
+    font-size: 1.3em;
+    color: white;
+    padding: 2% 5%;
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+	
+}
+
+ .poder span{
+    width: 180px;
+    height: 40px;
+    font-family: fantasy;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    display: inline-block;
+    background: #2d6562;
+    margin: 0.5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+	 display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.poder span:hover{
+    background: #70bdba;
+}
+
+.final{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h4{
+	text-align: center;
+    font-size: 1em;
+	color: white;
+}
+
+.conhecer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.conhecer a{
+    padding: 1px 60px;
+    background: #2d6562;
+    text-decoration: none;
+    font-weight: 800;
+    color: #111;
+    border-radius: 2px;
+	
+	
+}
+
+.conhecer a:hover{
+    background: #70bdba;
+}
+
+.cartas figure{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#personagem1_varric figure{
+     background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/varric_tethras.jpg);
+}
+
+#personagem2_sonic figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/sonic2.jpg);
+   
+}
+
+#personagem3_commander_shepard figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/commander_shepard.png);
+    
+}
+
+#personagem3_commander_shepard figcaption{
+    font-size: 2em;
+}
+
+#personagem4_miss_fortune figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/miss_fortune.jpg);
+    
+}
+
+#personagem5_robert figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/Carambom.png);    
+}
+
+#personagem6_ivy_valentine figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)),url(../img/ivy_valentine.jpg);
+}
+
+#personagem7_s_m_silveira figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/s_m_silveira.png);
+}
+
+#personagem8_katarina figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/Katarina.png);
+}
+
+#personagem9_sara figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/sara.jpeg);
+}
+
+#personagem10_super_trunfo figure{
+     background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/supertrunfo.png);
+}
+
+/* fim cartas */
+
+/* inicio responsividade */
+@media screen and (min-width:400px){
+	#topo, #corpo, #rodape{
+    float: left;
+    width: 100%;
+}
+#logo{
+    width: 70px;
+    height: 70px;
+    background-size: 120px;
+}
+#btn_menu{
+    margin-top: 5px;
+}
+#btn_fechar{
+    margin-top: 2px;
+}
+
+#menu{
+    width: 100%;
+    height: 0%;
+    overflow: hidden;
+    position: fixed;
+}
+
+#menu:target{
+    height: 100%;
+}
+
+#menu .x{
+	float: right;
+    margin-top: -2px;
+    margin-right: 10px;
+    padding: 10px;
+	font-size: 2em; 
+    font-weight: bold;
+}
+
+#menu .x:hover{
+	color: rgb(27, 93, 216);
+}
+
+#menu ul{
+	float: left;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+ 
+#menu ul li{ 
+	margin-top: 60px;
+	padding: 3%;
+    font-size: 2em;
+}
+
+#menu ul li:hover{
+	color: white;
+	background-color: cadetblue;
+}
+
+#topo a{
+    color: white;
+}
+
+#logo{
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/logomobile.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+    
+    
+/*carrosel*/   
+#carosel{
+    width: 400px;
+    margin: auto;
+    box-shadow: 2px 2px 10px #000;
+}
+
+/*carrosel*/ 
+
+#corpo_cartas{
+    width: 100%;
+    background-color:#000;
+}
+
+#corpo_cartas h1{
+     text-align: center;
+     font-size: 2em;
+	 color: white;
+}
+
+.cartas{
+    width: 90%;
+    background-color: #000;
+    margin: 5%;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(12, 102, 187);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+	box-shadow: 0px 0px 20px #079ef5;
+}
+
+.cartas figure{
+    width: 100%;
+    height: 600px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cartas figcaption{
+    font-size: 2.5em;
+	color: white;
+}
+
+h2, h3{
+    margin-top: 4%;
+    font-size: 1.6em;
+	color: white;
+}
+
+.cartas p{
+    font-size: 1.3em;
+    color: white;
+    padding: 2% 5%;
+	text-align: center;
+}
+
+h3{
+	text-align: center;
+}
+
+ .poder span{
+    width: 180px;
+    height: 40px;
+    font-family: fantasy;
+    text-align: center;
+    line-height: 40px;
+    font-size: 25px;
+    display: inline-block;
+    background: #2d6562;
+    margin: 0.5px;
+    transition: 0.5s;
+    color: #111;
+    border-radius: 4px;
+    cursor: pointer;
+	 display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 5px;
+}
+
+.poder span:hover{
+    background: #70bdba;
+}
+
+.final{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h4{
+	text-align: center;
+    font-size: 1em;
+	color: white;
+}
+
+.conhecer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.conhecer a{
+    padding: 1px 60px;
+    background: #2d6562;
+    text-decoration: none;
+    font-weight: 800;
+    color: #111;
+    border-radius: 2px;
+	
+	
+}
+
+.conhecer a:hover{
+    background: #70bdba;
+}
+
+.cartas figure{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#personagem1_varric figure{
+     background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/varric_tethras.jpg);
+}
+
+#personagem2_sonic figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/sonic2.jpg);
+   
+}
+
+#personagem3_commander_shepard figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/commander_shepard.png);
+    
+}
+
+#personagem3_commander_shepard figcaption{
+    font-size: 2em;
+}
+
+#personagem4_miss_fortune figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/miss_fortune.jpg);
+    
+}
+
+#personagem5_robert figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)),;
+    background-image: url(../img/Carambom.png);
+    
+}
+
+#personagem6_ivy_valentine figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)),url(../img/ivy_valentine.jpg);
+}
+
+#personagem7_s_m_silveira figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/s_m_silveira.png);
+}
+
+#personagem8_katarina figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/Katarina.png);
+}
+
+#personagem9_sara figure{
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/sara.jpeg);
+}
+
+#personagem10_super_trunfo figure{
+     background-image: linear-gradient(rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0),rgba(255,255,255,0), rgba(128,128,128,1)), url(../img/supertrunfo.png);
+}
+
+#rodape{
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-shadow: 0.5px 0px 1px white;
+    background-color: black;
+    padding: 3% 4%;
+    font-size: 0.9em;
+    margin-top: 40px;
+}
+
+#redes_sociais a{
+    color: rgba(255, 255, 255, 0.7);
+    text-shadow: none;
+    font-size: 1.7em;
+    margin-right: 3%;
+    transition: 0.2s;
+}
+#redes_sociais a:hover{
+    color: rgba(255, 255, 255, 1);
+}
+#redes_sociais i{
+    transition: 0.2s;/* tem que colocar o transition aqui, pq só bomba aqui sem o hover */
+}
+#redes_sociais i:hover{
+    transform: translateY(-10px);
+}
+#rodape p{
+    margin-top: 10px;
+}
+
+fieldset{
+    margin-left: 5%;
+}
+legend{
+    font-size: 2.5em;
+}
+label{
+    font-size: 1.3em;
+}
+
+
+#cortina{
+    width: 70%;
+    height: 55%;
+    margin-top: 15%;
+}
+
+#modal{
+    width: 65%;
+    height: 70%;
+}
+
+#modal h2{
+    font-size: 1.3em;
+}
+
+#modal form{
+    height: 75%;
+}
+#modal form input#btn{
+    height: 15%;
+    margin-top: 10px;
+    font-size: 0.5em;
+}
+
+/* Fim modal e Contato */
+
+}
+
+@media screen and (min-width:768px){
+    #btn_menu, #btn_fechar{
+        display: none;
+    }
+    #menu{
+        width: 65%;
+        height: 100px; 
+        position: relative;
+        float: right;
+        transition: 0.5s;
+        background: none;
+    }
+    #menu ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 0.8em;
+    }
+    #menu ul li{
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+	#menu ul li:hover{
+	color: cadetblue;
+	background-color: #000;
+	}
+	
+    #logo{
+        width: 190px;
+        height: 100px;
+        background-image: url(../img/logodesktop.png);
+        background-size: 200px;
+        margin-left: 50px;
+    }
+    #btn_menu{
+        margin-top: 23px;
+    }
+    #btn_fechar{
+        margin-top: 15px;
+    }
+    #banner button{
+        width: 49%;
+        height: 40px;/* definindo altura para os botões */
+        font-size: 1.3em;
+    }
+	
+	.jogar{
+		background-color: #34819d;
+		border-radius: 50px;
+		box-shadow: 0px 0px 20px #000;
+		width: 200px;
+		animation: animate 2s linear infinite;
+		
+	}
+	
+
+	
+	@keyframes animate{ /* ISTO FAZ O EFEITO FUNIONAR*/
+    
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+
+    .conteudo{  
+        font-size: 1.2em;
+    }
+    .conteudo h1{
+        font-size: 2.3em;
+    }
+
+    #quemSomos h3{
+        font-size: 2.3em;
+    }
+    #quemSomos p{
+        font-size: 1.2em;
+    }
+	
+
+	#corpo_cartas{
+    width: 100%;
+    background-color:#000;
+	margin: 0px  30px  30px 0px;	
+    }
+	
+	h1{
+     font-size: 6em;
+    }
+	.cartas{
+		box-shadow: 0px 0px 40px #2d6562;
+	}
+	
+	.cartas figure{
+    height: 900px;
+    }
+	.cartas figcaption{
+    font-size: 3em;
+    }
+	h2, h3{
+    font-size: 4em;
+	
+    } 
+  .cartas p{
+    font-size: 3em;
+    }
+	 .poder span{
+    width: 600px;
+    height: 90px;
+    font-size: 60px;
+	margin-top: 10px;
+    }
+ 	.conhecer a{
+    padding: 20px 150px;
+    font-weight: 800;
+	font-size: 5vh;
+	}
+	
+	/* Roda pé Contato*/
+    #rodapeContato{
+    font-size: 1.2em;
+    margin-top: 410px;
+    }
+
+    #redesSociais a{
+    font-size: 1.6em;
+    }   
+    #rodapeContato p{
+    margin-top:7px;
+    font-size: 1.2em;
+    }
+
+    
+    #cortina{
+        width: 100%;
+        height: 57%;
+    }
+    
+    #modal{
+        width: 60%;
+        height: 65%;
+        margin-right: 150px;
+    }
+    
+    #abrir{
+        margin: 50px;
+        font-size: 1.4em;
+    }
+		
+		
+    #fechar{
+        float: right;
+        margin: 10px;
+    }
+    
+    #modal h2{
+        font-size: 2.2em;
+    }
+    #modal label{
+        margin-left: 5px;
+    }
+    
+    #modal form{
+        width: 100%;
+        height: 75%;
+    }
+    #modal form input{
+        width: 100%;
+        height: 50%;
+    }
+    #modal form input#btn{
+        height: 12%;
+        margin-top: 15px;
+        font-size: 1em;
+    }
+    
+}
+
+@media screen and (min-width:1024px){
+    #btn_menu, #btn_fechar{
+        display: none;
+    }
+    #menu{
+        width: 65%;
+        height: 100px; 
+        position: relative;
+        float: right;
+        transition: 0.5s;
+        background: none;
+    }
+    #menu ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.3em;
+    }
+    #menu ul li{
+        padding: 0;
+        margin: 0;
+        width: auto;
+    }
+	
+		#menu ul li:hover{
+	color: cadetblue;
+	background-color: #000;
+	}
+	
+	
+	
+    #logo{
+        width: 200px;
+        height: 100px;
+        background-image: url(../img/logodesktop.png);
+        background-size: 200px;
+        margin-left: 50px;
+    }
+    #btn_menu{
+        margin-top: 23px;
+    }
+    #btn_fechar{
+        margin-top: 15px;
+    }
+	
+	.jogar{
+		background-color: #34819d;
+		border-radius: 50px;
+		box-shadow: 0px 0px 20px #000;
+		width: 200px;
+		animation: animate 2s linear infinite;
+		
+	}
+	
+	@keyframes animate{ /* ISTO FAZ O EFEITO FUNIONAR*/
+    
+    0%,100%{
+        filter: hue-rotate(0deg);
+    }
+    50%{
+        filter: hue-rotate(360deg);
+    }
+}
+	
+	
+	
+	
+    #banner button{
+        width: 49%;
+        height: 40px;/* definindo altura para os botões */
+        font-size: 1.5em;
+    }
+
+    .conteudo{ 
+        text-align: justify;
+        font-size: 1.4em;
+        margin-bottom: none;
+        text-indent: 35px;
+    }
+   
+    .conteudo h1{
+        margin-top: 5px;
+        text-align: center;
+        font-size: 2.2em;
+    }
+    .conteudo  p{
+        padding: 5%;
+        text-align: justify;
+        text-indent: 30px;/* recuo de primeira linha */
+        font-size: 1.2em;
+    }
+
+    #quemSomos h3{
+        margin: 10px;
+        font-size: 2.2em;
+    }
+    #quemSomos p{
+        font-size: 1.2em;
+    }
+    
+    /*galerias*/
+    
+    #galerias_titulo h3{
+      font-size: 4em;
+        margin-bottom: 1%;
+    }
+    
+    #carosel{
+        display: none;
+    }
+    
+    #galeria2{
+    width:100%;
+    height:400px;
+    display: grid;
+    overflow:hidden;
+    grid-template-columns: repeat(2,100%);
+    
+}
+
+.imagems2{
+    position: relative;
+    width: 100%;
+    height: 100%;  
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(255,255,255,0.1),rgba(255,255,255,0.1), rgba(0,0,0,0.6));
+}
+
+
+.g_imagem{
+    position: relative;
+    width: 200px;
+    height: 335px;
+    margin: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.g_imagem:hover{
+        margin: 0 30px;
+        margin-top: 30px;
+        transform: scale(1.2);
+}
+
+#g_varric{
+    background-image: url(../img/c_1varric.png);
+}
+#g_sonic{
+    background-image: url(../img/c_2sonic.png);
+}
+#g_commandershapard{
+    background-image: url(../img/c_3commandershepard.png);
+}
+#g_missfortune{
+    background-image: url(../img/c_4missfortune.png);
+}
+#g_carabom{
+    background-image: url(../img/c_5carabom.png);
+}
+#g_ivivalentine{
+    background-image: url(../img/c_6ivyvalentine.png);
+}
+#g_smsilveira{
+    background-image: url(../img/c_7smsilveira.png);
+}
+#g_katarina{
+    background-image: url(../img/c_8katarina.png);
+}
+#g_sara{
+    background-image: url(../img/c_9sara.png);
+}
+#g_supertrunfo{
+    background-image: url(../img/c_10supertrunfo.png);
+}
+
+.arrow__btn {
+      position: absolute;
+      color: #fff;
+      text-decoration: none;
+      font-size: 5.5em;
+      background:rgb(0,0,0);
+      width: 40px;
+      padding: 13% 0;
+      text-align: center;
+      z-index: 1;
+    }
+
+.left-arrow {
+      top:0; bottom:0; left:0;
+      background: linear-gradient(-90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    }
+    
+.right-arrow {
+      top:0; bottom:0; right: 0;
+      background: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(0,0,0,1) 100%);
+    }
+    
+    /*galerias*/
+
+	.todas_as_cartas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+	}
+	
+	.cartas{
+       width: 40%;
+    	height: 60%;
+	}
+      
+	.cartas figure{
+        width: 100%;
+      height: 450px;
+    }
+
+   .cartas figcaption{
+      font-size: 6vh;
+    }
+
+    h2, h3{
+      margin-top: 3px;
+      font-size: 4vh; 
+    }
+	.cartas p{
+        font-size: 3vh;
+        padding: 2% 5%;
+	    text-align: center;
+    }
+	.poder{
+		display: flex;
+	}
+	
+	.poder span{
+        width: 95px;
+        height: 50px;
+        font-size: 20px;
+		margin: 4px;
+	}
+    
+	h4{
+       font-size: 3vh;
+	
+    }
+	
+	.conhecer a{
+        padding: 1px 30px;
+        font-weight: 800;
+    }
+	
+	button{
+        font-size: 1.2em;
+    }
+
+    #rodape{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: white;
+        text-shadow: 0.5px 0px 1px white;
+        background-color: rgba(0, 0, 0,0.02);
+        padding: 3% 4%;
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    #rodape p{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+    
+    #redes_sociais i:hover{
+        transform: translateY(-10px);
+        color: rgb(0, 153, 255);
+    }
+
+    #conectar{
+        margin-right: 30px;
+    }
+
+
+    /* rodape do contato */
+    #rodapeContato{
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        color: white;
+        text-shadow: 0.5px 0px 1px white;
+        background-color: rgba(0, 0, 0,0.02);
+        padding: 3% 4%;
+        font-size: 1em;
+        margin-top: 450px;
+    }
+
+    #rodapeContato p{
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+    #cortina{
+        width: 100%;
+        height: 80%;
+        margin-top: 10%;
+    }
+
+    #modal{
+        width: 50%;
+        height: 60%;
+        margin-right: 290px;
+        margin-top: -500px;
+    }
+
+    #abrir{
+        margin: 50px;
+    }
+    #fechar{
+        margin: 18px;
+    }
+
+    #modal h2{
+        font-size: 2.2em;
+    }
+    #modal label{
+        margin-left: 20px;
+    }
+
+    #modal form{
+        width: 100%;
+        height: 75%;
+    }
+    #modal form input{
+        width: 75%;
+        height: 40%;
+        margin-left: 30px;
+		color: #000;
+    }
+    #modal form input#btn{
+        width: 20%;
+        height: 15%;
+        margin-right: 12px;
+        font-size: 0.9em;
+    }
+    
+}
